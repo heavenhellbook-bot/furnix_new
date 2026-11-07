@@ -1,0 +1,124 @@
+{
+ "schemaVersion": 1,
+ "lists": [
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Изделия из стекла",
+   "sourceFile": "Изделия из стекла Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/izdeliya-iz-stekla-988",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:12+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 179,
+    "withoutUnit": 0,
+    "withoutPrice": 0,
+    "skippedRows": 4201
+   },
+   "path": "kronas/01.json"
+  },
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Кромочные материалы",
+   "sourceFile": "Кромочные материалы Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/kromochnye-materialy-1052",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:13+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 3207,
+    "withoutUnit": 81,
+    "withoutPrice": 4,
+    "skippedRows": 0
+   },
+   "path": "kronas/02.json"
+  },
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Кухонные комплектующие",
+   "sourceFile": "Кухонные комплектующие Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/furnitura-270/kuhonnye-komplektuyushhie-450",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:13+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 1092,
+    "withoutUnit": 612,
+    "withoutPrice": 0,
+    "skippedRows": 0
+   },
+   "path": "kronas/03.json"
+  },
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Мебельная фурнитура",
+   "sourceFile": "Мебельная фурнитура Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/furnitura-270",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:13+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 4621,
+    "withoutUnit": 1371,
+    "withoutPrice": 1,
+    "skippedRows": 0
+   },
+   "path": "kronas/04.json"
+  },
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Плитные материалы",
+   "sourceFile": "Плитные материалы Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/plitnye-materialy-i-uslugi-77",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:13+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 3513,
+    "withoutUnit": 442,
+    "withoutPrice": 5,
+    "skippedRows": 0
+   },
+   "path": "kronas/05.json"
+  },
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Техника и сантехника",
+   "sourceFile": "Техника и сантехника Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/bitovaya-tehnika-1521",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:13+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 507,
+    "withoutUnit": 503,
+    "withoutPrice": 2,
+    "skippedRows": 0
+   },
+   "path": "kronas/06.json"
+  },
+  {
+   "supplier": "KRONAS",
+   "currency": "UAH",
+   "category": "Фасады",
+   "sourceFile": "Фасады Прайс KRONAS.xlsx",
+   "sourceUrl": "https://kronas.com.ua/fasady-1524",
+   "fileDate": "2026-10-30",
+   "importedAt": "2026-11-03T19:59:13+00:00",
+   "priceStatus": "needs-review",
+   "stats": {
+    "items": 880,
+    "withoutUnit": 17,
+    "withoutPrice": 0,
+    "skippedRows": 0
+   },
+   "path": "kronas/07.json"
+  }
+ ]
+}

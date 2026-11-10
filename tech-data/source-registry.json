@@ -1,0 +1,126 @@
+{
+  "format": "furnix.tech.sources",
+  "version": 1,
+  "items": [
+    {
+      "name": "FreeCAD Woodworking",
+      "kind": "parameteric-reference",
+      "url": "https://github.com/dprojects/Woodworking",
+      "notes": "MIT; dependent on FreeCAD, not browser drop-in",
+      "bundled": false,
+      "id": "source-01"
+    },
+    {
+      "name": "OpenCutList",
+      "kind": "cutlist-reference",
+      "url": "https://www.opencutlist.org/en/download",
+      "notes": "GPLv3 SketchUp extension; reference only, not embedded",
+      "bundled": false,
+      "id": "source-02"
+    },
+    {
+      "name": "Blum E-SERVICES",
+      "kind": "vendor-cad",
+      "url": "https://www.blum.com/gb/en/services/technical-services/e-services/",
+      "notes": "partner/login likely required for full data; external only",
+      "bundled": false,
+      "id": "source-03"
+    },
+    {
+      "name": "Blum CAD/CAM interface",
+      "kind": "vendor-cad",
+      "url": "https://www.blum.com/ua/uk/services/industrial-production/cad-cam-interface/",
+      "notes": "BXF integration subject to terms",
+      "bundled": false,
+      "id": "source-04"
+    },
+    {
+      "name": "Hettich CAD downloads",
+      "kind": "vendor-cad",
+      "url": "https://www.hettich.com/en-de/services/hettich-cad/cad-downloads",
+      "notes": "external downloadable CAD data; verify redistribution rights",
+      "bundled": false,
+      "id": "source-05"
+    },
+    {
+      "name": "GRASS CAD",
+      "kind": "vendor-cad",
+      "url": "https://www.grass.eu/en/tec-center/cad-data/",
+      "notes": "external product CAD data; verify permission",
+      "bundled": false,
+      "id": "source-06"
+    },
+    {
+      "name": "Salice catalogues",
+      "kind": "vendor-cad",
+      "url": "https://www.salice.com/ww/en/download/catalogues",
+      "notes": "external technical manuals; verify permission",
+      "bundled": false,
+      "id": "source-07"
+    },
+    {
+      "name": "EGGER",
+      "kind": "material-source",
+      "url": "https://www.egger.com/",
+      "notes": "technical sheets by exact product; not embedded",
+      "bundled": false,
+      "id": "source-08"
+    },
+    {
+      "name": "Kronospan",
+      "kind": "material-source",
+      "url": "https://kronospan.com/",
+      "notes": "technical sheets by exact product; not embedded",
+      "bundled": false,
+      "id": "source-09"
+    },
+    {
+      "name": "ViyarPro limitations",
+      "kind": "manufacturing-source",
+      "url": "https://www.viyar.pro/service/doc/?cid=dsp&s=limitations",
+      "notes": "provider-specific constraints; not auto-populated",
+      "bundled": false,
+      "id": "source-10"
+    },
+    {
+      "name": "ViyarPro import",
+      "kind": "manufacturing-source",
+      "url": "https://www.viyar.pro/service/doc/?cid=dsp&s=details-import",
+      "notes": "provider-specific import layout; not implemented",
+      "bundled": false,
+      "id": "source-11"
+    },
+    {
+      "name": "KRONAS Master 3D",
+      "kind": "manufacturing-source",
+      "url": "https://kronas.com.ua/online-services-3d",
+      "notes": "production interface; not implemented",
+      "bundled": false,
+      "id": "source-12"
+    },
+    {
+      "name": "OpenCascade.js",
+      "kind": "geometry-engine",
+      "url": "https://ocjs.org/",
+      "notes": "CAD kernel external dependency; not installed",
+      "bundled": false,
+      "id": "source-13"
+    },
+    {
+      "name": "FreeCAD",
+      "kind": "CAD-engine",
+      "url": "https://www.freecad.org/",
+      "notes": "native CAD application; not bundled",
+      "bundled": false,
+      "id": "source-14"
+    },
+    {
+      "name": "SketchUp Warehouse",
+      "kind": "3d-source",
+      "url": "https://3dwarehouse.sketchup.com/",
+      "notes": "do not bulk ingest copyrighted models",
+      "bundled": false,
+      "id": "source-15"
+    }
+  ]
+}

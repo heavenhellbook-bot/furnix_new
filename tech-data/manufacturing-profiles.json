@@ -1,0 +1,48 @@
+{
+  "format": "furnix.tech.manufacturing",
+  "version": 1,
+  "items": [
+    {
+      "id": "viyar",
+      "name": "ВІЯР",
+      "sawKerfMm": null,
+      "sheetTrimMm": null,
+      "minPartWidthMm": null,
+      "minPartLengthMm": null,
+      "edgingOverrides": null,
+      "drillingRules": null,
+      "allowedCncFormats": [],
+      "sourceUrl": "https://www.viyar.pro/service/doc/?cid=dsp&s=limitations",
+      "reviewStatus": "unconfigured",
+      "manufacturingApproved": false
+    },
+    {
+      "id": "kronas",
+      "name": "KRONAS",
+      "sawKerfMm": null,
+      "sheetTrimMm": null,
+      "minPartWidthMm": null,
+      "minPartLengthMm": null,
+      "edgingOverrides": null,
+      "drillingRules": null,
+      "allowedCncFormats": [],
+      "sourceUrl": "https://kronas.com.ua/online-services-3d",
+      "reviewStatus": "unconfigured",
+      "manufacturingApproved": false
+    },
+    {
+      "id": "own",
+      "name": "Власне виробництво",
+      "sawKerfMm": null,
+      "sheetTrimMm": null,
+      "minPartWidthMm": null,
+      "minPartLengthMm": null,
+      "edgingOverrides": null,
+      "drillingRules": null,
+      "allowedCncFormats": [],
+      "sourceUrl": null,
+      "reviewStatus": "unconfigured",
+      "manufacturingApproved": false
+    }
+  ]
+}

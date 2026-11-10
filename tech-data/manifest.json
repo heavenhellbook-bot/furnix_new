@@ -1,0 +1,23 @@
+{
+  "format": "furnix.tech.library",
+  "version": 1,
+  "name": "FURNIX TECH LIBRARY PACK",
+  "origin": "FURNIX original template data + public vendor index URLs",
+  "included": {
+    "nativeTemplates": 24,
+    "genericMaterials": 13,
+    "genericEdgeBands": 12,
+    "vendorCatalogIndexes": 4,
+    "manufacturingProfileShells": 3,
+    "sourceLinks": 15
+  },
+  "notIncluded": [
+    "Blum/Hettich/GRASS/Salice proprietary CAD geometry",
+    "FreeCAD Woodworking full source (requires FreeCAD)",
+    "OpenCutList GPLv3 SketchUp extension",
+    "manufacturer verified fitting rules and drilling coordinates",
+    "CNC data or approved production profiles"
+  ],
+  "manufacturingStatus": "NOT_APPROVED",
+  "units": "mm"
+}

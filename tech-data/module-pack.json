@@ -1,0 +1,471 @@
+{
+  "format": "furnix.module.library",
+  "version": 1,
+  "templates": [
+    {
+      "id": "flp-base-345",
+      "name": "Тумба 345 — одні дверцята",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 345,
+        "height": 725,
+        "depth": 545,
+        "thickness": 18,
+        "doors": 1,
+        "drawers": 0,
+        "shelves": 1,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-base-473",
+      "name": "Тумба 473 — двоє дверцят",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 473,
+        "height": 734,
+        "depth": 563,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 1,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-base-527",
+      "name": "Тумба 527 — одна секція",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 527,
+        "height": 760,
+        "depth": 570,
+        "thickness": 18,
+        "doors": 1,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-base-685",
+      "name": "Тумба 685 — дві секції",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 685,
+        "height": 745,
+        "depth": 555,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-base-735",
+      "name": "Нижня шафа 735 — фасади",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 735,
+        "height": 825,
+        "depth": 575,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 1,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-base-915",
+      "name": "Нижня шафа 915 — секційна",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 915,
+        "height": 720,
+        "depth": 560,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 3,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-sink-615",
+      "name": "Корпус під мийку 615",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 615,
+        "height": 720,
+        "depth": 540,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 0,
+        "divider": false,
+        "back": false,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-sink-873",
+      "name": "Корпус під мийку 873",
+      "icon": "▤",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 873,
+        "height": 760,
+        "depth": 550,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 0,
+        "divider": false,
+        "back": false,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-drawer-465",
+      "name": "Корпус 465 — дві шухляди",
+      "icon": "▥",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 465,
+        "height": 760,
+        "depth": 550,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 2,
+        "shelves": 0,
+        "divider": false,
+        "back": true,
+        "color": "oak",
+        "drawerSection": "left",
+        "drawerBoxHeight": 105,
+        "drawerSlideClearance": 13
+      }
+    },
+    {
+      "id": "flp-drawer-675",
+      "name": "Корпус 675 — три шухляди",
+      "icon": "▥",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 675,
+        "height": 780,
+        "depth": 570,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 3,
+        "shelves": 0,
+        "divider": false,
+        "back": true,
+        "color": "oak",
+        "drawerSection": "left",
+        "drawerBoxHeight": 105,
+        "drawerSlideClearance": 13
+      }
+    },
+    {
+      "id": "flp-drawer-840",
+      "name": "Корпус 840 — три шухляди",
+      "icon": "▥",
+      "category": "base",
+      "mount": "base",
+      "params": {
+        "width": 840,
+        "height": 825,
+        "depth": 580,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 3,
+        "shelves": 0,
+        "divider": false,
+        "back": true,
+        "color": "oak",
+        "drawerSection": "left",
+        "drawerBoxHeight": 105,
+        "drawerSlideClearance": 13
+      }
+    },
+    {
+      "id": "flp-open-375",
+      "name": "Відкрита тумба 375",
+      "icon": "▤",
+      "category": "open",
+      "mount": "base",
+      "params": {
+        "width": 375,
+        "height": 720,
+        "depth": 500,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-open-735",
+      "name": "Відкрита тумба 735",
+      "icon": "▤",
+      "category": "open",
+      "mount": "base",
+      "params": {
+        "width": 735,
+        "height": 760,
+        "depth": 520,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 0,
+        "shelves": 3,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-355",
+      "name": "Верхня 355 — вузька",
+      "icon": "▤",
+      "category": "wall",
+      "mount": "wall",
+      "params": {
+        "width": 355,
+        "height": 610,
+        "depth": 310,
+        "thickness": 18,
+        "doors": 1,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-493",
+      "name": "Верхня 493 — висока",
+      "icon": "▤",
+      "category": "wall",
+      "mount": "wall",
+      "params": {
+        "width": 493,
+        "height": 815,
+        "depth": 320,
+        "thickness": 18,
+        "doors": 1,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-645",
+      "name": "Верхня 645 — дві дверки",
+      "icon": "▤",
+      "category": "wall",
+      "mount": "wall",
+      "params": {
+        "width": 645,
+        "height": 710,
+        "depth": 330,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-725",
+      "name": "Верхня 725 — секційна",
+      "icon": "▤",
+      "category": "wall",
+      "mount": "wall",
+      "params": {
+        "width": 725,
+        "height": 720,
+        "depth": 320,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-955",
+      "name": "Верхня 955 — велика",
+      "icon": "▤",
+      "category": "wall",
+      "mount": "wall",
+      "params": {
+        "width": 955,
+        "height": 670,
+        "depth": 330,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 2,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-open-535",
+      "name": "Верхні відкриті полиці 535",
+      "icon": "▤",
+      "category": "open",
+      "mount": "wall",
+      "params": {
+        "width": 535,
+        "height": 630,
+        "depth": 315,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 0,
+        "shelves": 3,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-wall-open-785",
+      "name": "Верхній відкритий 785",
+      "icon": "▤",
+      "category": "open",
+      "mount": "wall",
+      "params": {
+        "width": 785,
+        "height": 740,
+        "depth": 330,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 0,
+        "shelves": 3,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-tall-415",
+      "name": "Пенал 415 — вузький",
+      "icon": "▤",
+      "category": "tall",
+      "mount": "tall",
+      "params": {
+        "width": 415,
+        "height": 2150,
+        "depth": 540,
+        "thickness": 18,
+        "doors": 1,
+        "drawers": 0,
+        "shelves": 5,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-tall-585",
+      "name": "Пенал 585 — нестандартний",
+      "icon": "▤",
+      "category": "tall",
+      "mount": "tall",
+      "params": {
+        "width": 585,
+        "height": 2235,
+        "depth": 550,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 6,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-tall-735",
+      "name": "Пенал 735 — ширший",
+      "icon": "▤",
+      "category": "tall",
+      "mount": "tall",
+      "params": {
+        "width": 735,
+        "height": 2280,
+        "depth": 560,
+        "thickness": 18,
+        "doors": 2,
+        "drawers": 0,
+        "shelves": 7,
+        "divider": true,
+        "back": true,
+        "color": "oak"
+      }
+    },
+    {
+      "id": "flp-tall-open-465",
+      "name": "Високий відкритий 465",
+      "icon": "▤",
+      "category": "open",
+      "mount": "tall",
+      "params": {
+        "width": 465,
+        "height": 2120,
+        "depth": 510,
+        "thickness": 18,
+        "doors": 0,
+        "drawers": 0,
+        "shelves": 6,
+        "divider": false,
+        "back": true,
+        "color": "oak"
+      }
+    }
+  ]
+}

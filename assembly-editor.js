@@ -1,3 +1,4 @@
+import { mountTechTemplates } from './tech-data/assembly-adapter.mjs';
 import { mountDrawerCalculator } from './drawer-calculator-ui.js';
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -288,6 +289,7 @@ panel.innerHTML = `
       <button type="button" data-builtin-module="wall">Верхний корпус</button>
       <button type="button" data-builtin-module="tall">Пенал</button>
     </div>
+    <details><summary>Шаблоны Tech Library</summary><div id="tech-template-list"></div></details>
     <h3 style="margin-top:10px">Личная библиотека</h3>
     <div id="library-template-list" aria-live="polite"></div>
     <form id="library-template-form">
@@ -801,6 +803,13 @@ appTabs.setAttribute("aria-label", "Разделы FURNIX");
 appTabs.innerHTML = '<button type="button" role="tab" id="tab-design" aria-selected="true" aria-controls="design-panel" tabindex="0">Проектирование</button><button type="button" role="tab" id="tab-lifts" aria-selected="false" aria-controls="lift-page" tabindex="-1">Подъёмники</button>';
 appTabs.insertAdjacentHTML('beforeend', '<button type="button" role="tab" id="tab-drawers" aria-selected="false" aria-controls="drawer-page" tabindex="-1">Ящики</button>');
 toolbar.insertAdjacentElement("afterend", appTabs);
+const techLibraryLink = document.createElement('a');
+techLibraryLink.href = './tech.html';
+techLibraryLink.target = '_blank';
+techLibraryLink.rel = 'noopener';
+techLibraryLink.textContent = 'Техническая библиотека ↗';
+techLibraryLink.style.cssText = 'align-self:center;padding:8px;color:#a8d7c8';
+appTabs.append(techLibraryLink);
 const drawerPage = document.createElement('section');
 drawerPage.id = 'drawer-page';
 drawerPage.setAttribute('role','tabpanel');
@@ -842,6 +851,7 @@ appTabs.addEventListener('keydown',event=>{
  if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
  event.preventDefault();
  const i=tabs.indexOf(event.target);
+ if(i < 0) return;
  const next=tabs[event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length-1 : (i+(event.key === 'ArrowRight' ? 1 : -1)+tabs.length)%tabs.length];
  next.focus(); next.click();
 });
@@ -8168,6 +8178,7 @@ byId("external-csv-import").addEventListener("click", () => {
   byId("external-source-rights").checked = false;
 });
 renderPersonalLibrary();
+mountTechTemplates(byId("tech-template-list"), {validate:validCabinet,add:addCabinet});
 byId("assembly-add-panel").addEventListener("click", () => {
   const product = selectedProduct();
   if (!product || product.type !== "cabinet") {

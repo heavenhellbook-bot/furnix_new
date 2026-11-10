@@ -1,0 +1,17 @@
+{
+  "format": "furnix.tech.hardware",
+  "version": 1,
+  "items": [
+    {
+      "id": "example-unverified-fittings-001",
+      "name": "Власний шаблон фурнітури: тільки приклад",
+      "manufacturer": null,
+      "sku": null,
+      "mountingHoles": null,
+      "clearancesMm": null,
+      "sourceUrl": null,
+      "reviewStatus": "draft",
+      "manufacturingApproved": false
+    }
+  ]
+}

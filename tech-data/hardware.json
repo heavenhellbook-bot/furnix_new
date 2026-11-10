@@ -1,0 +1,70 @@
+{
+  "format": "furnix.tech.hardware",
+  "version": 1,
+  "items": [
+    {
+      "id": "vendor-blum-catalog",
+      "name": "Каталог Blum (підключення очікується)",
+      "manufacturer": "Blum",
+      "family": "drawer_system",
+      "sku": null,
+      "mountingHoles": null,
+      "clearancesMm": null,
+      "loadRatingKg": null,
+      "cadFile": null,
+      "description": "Петлі, напрямні, шухляди, підйомники",
+      "sourceUrl": "https://www.blum.com/gb/en/services/technical-services/e-services/",
+      "reviewStatus": "external_catalog",
+      "manufacturingApproved": false,
+      "importedProductData": false
+    },
+    {
+      "id": "vendor-hettich-catalog",
+      "name": "Каталог Hettich (підключення очікується)",
+      "manufacturer": "Hettich",
+      "family": "drawer_runner",
+      "sku": null,
+      "mountingHoles": null,
+      "clearancesMm": null,
+      "loadRatingKg": null,
+      "cadFile": null,
+      "description": "Петлі, напрямні, висувні системи",
+      "sourceUrl": "https://www.hettich.com/en-de/services/hettich-cad/cad-downloads",
+      "reviewStatus": "external_catalog",
+      "manufacturingApproved": false,
+      "importedProductData": false
+    },
+    {
+      "id": "vendor-grass-catalog",
+      "name": "Каталог GRASS (підключення очікується)",
+      "manufacturer": "GRASS",
+      "family": "drawer_system",
+      "sku": null,
+      "mountingHoles": null,
+      "clearancesMm": null,
+      "loadRatingKg": null,
+      "cadFile": null,
+      "description": "CAD-дані та вузли",
+      "sourceUrl": "https://www.grass.eu/en/tec-center/cad-data/",
+      "reviewStatus": "external_catalog",
+      "manufacturingApproved": false,
+      "importedProductData": false
+    },
+    {
+      "id": "vendor-salice-catalog",
+      "name": "Каталог Salice (підключення очікується)",
+      "manufacturer": "Salice",
+      "family": "hinge",
+      "sku": null,
+      "mountingHoles": null,
+      "clearancesMm": null,
+      "loadRatingKg": null,
+      "cadFile": null,
+      "description": "Петлі та підйомні системи",
+      "sourceUrl": "https://www.salice.com/ww/en/download/catalogues",
+      "reviewStatus": "external_catalog",
+      "manufacturingApproved": false,
+      "importedProductData": false
+    }
+  ]
+}

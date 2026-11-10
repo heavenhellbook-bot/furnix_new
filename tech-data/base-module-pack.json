@@ -1,0 +1,350 @@
+{
+    "format":  "furnix.module.library",
+    "version":  1,
+    "templates":  [
+                      {
+                          "id":  "base",
+                          "name":  "Нижня 600, двоє дверцят",
+                          "icon":  "▤",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  600,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  1,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "base-single",
+                          "name":  "Нижня 400, одні дверцята",
+                          "icon":  "▥",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  400,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  1,
+                                         "divider":  false,
+                                         "shelves":  1,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "base-wide",
+                          "name":  "Нижня 900, двостулкова",
+                          "icon":  "▤",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  900,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  2,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "sink",
+                          "name":  "Корпус під мийку 800",
+                          "icon":  "◉",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  800,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  2,
+                                         "divider":  false,
+                                         "shelves":  0,
+                                         "back":  false,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "drawer",
+                          "name":  "Тумба 600, три шухляди",
+                          "icon":  "▥",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  600,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  0,
+                                         "divider":  false,
+                                         "shelves":  0,
+                                         "back":  true,
+                                         "drawers":  3,
+                                         "drawerBoxHeight":  110,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "drawer-two",
+                          "name":  "Тумба 450, дві шухляди",
+                          "icon":  "▥",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  450,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  0,
+                                         "divider":  false,
+                                         "shelves":  0,
+                                         "back":  true,
+                                         "drawers":  2,
+                                         "drawerBoxHeight":  150,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "base-open",
+                          "name":  "Відкрита тумба 500",
+                          "icon":  "☷",
+                          "category":  "open",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  500,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  0,
+                                         "divider":  false,
+                                         "shelves":  2,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "base-narrow",
+                          "name":  "Нижня вузька 300",
+                          "icon":  "▣",
+                          "category":  "base",
+                          "mount":  "base",
+                          "params":  {
+                                         "width":  300,
+                                         "height":  720,
+                                         "depth":  560,
+                                         "doors":  1,
+                                         "divider":  false,
+                                         "shelves":  1,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "wall",
+                          "name":  "Верхня 600, двоє дверцят",
+                          "icon":  "▦",
+                          "category":  "wall",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  600,
+                                         "height":  700,
+                                         "depth":  320,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  2,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "wall-single",
+                          "name":  "Верхня 400, одні дверцята",
+                          "icon":  "▦",
+                          "category":  "wall",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  400,
+                                         "height":  700,
+                                         "depth":  320,
+                                         "doors":  1,
+                                         "divider":  false,
+                                         "shelves":  2,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "wall-wide",
+                          "name":  "Верхня 800, двоє дверцят",
+                          "icon":  "▦",
+                          "category":  "wall",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  800,
+                                         "height":  700,
+                                         "depth":  320,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  2,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "wall-high",
+                          "name":  "Верхня висока 600",
+                          "icon":  "▦",
+                          "category":  "wall",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  600,
+                                         "height":  900,
+                                         "depth":  320,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  3,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "wall-low",
+                          "name":  "Верхня низька 800",
+                          "icon":  "▬",
+                          "category":  "wall",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  800,
+                                         "height":  350,
+                                         "depth":  320,
+                                         "doors":  1,
+                                         "divider":  false,
+                                         "shelves":  0,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "open",
+                          "name":  "Верхні відкриті полиці",
+                          "icon":  "☷",
+                          "category":  "open",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  450,
+                                         "height":  700,
+                                         "depth":  320,
+                                         "doors":  0,
+                                         "divider":  false,
+                                         "shelves":  3,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "open-wide",
+                          "name":  "Відкритий стелаж 800",
+                          "icon":  "☷",
+                          "category":  "open",
+                          "mount":  "wall",
+                          "params":  {
+                                         "width":  800,
+                                         "height":  700,
+                                         "depth":  320,
+                                         "doors":  0,
+                                         "divider":  true,
+                                         "shelves":  4,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "tall",
+                          "name":  "Пенал 600 із дверцятами",
+                          "icon":  "▣",
+                          "category":  "tall",
+                          "mount":  "tall",
+                          "params":  {
+                                         "width":  600,
+                                         "height":  2200,
+                                         "depth":  560,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  5,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "tall-narrow",
+                          "name":  "Пенал 450 з полицями",
+                          "icon":  "▣",
+                          "category":  "tall",
+                          "mount":  "tall",
+                          "params":  {
+                                         "width":  450,
+                                         "height":  2200,
+                                         "depth":  560,
+                                         "doors":  1,
+                                         "divider":  false,
+                                         "shelves":  6,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      },
+                      {
+                          "id":  "tall-wide",
+                          "name":  "Пенал 800 з відділеннями",
+                          "icon":  "▣",
+                          "category":  "tall",
+                          "mount":  "tall",
+                          "params":  {
+                                         "width":  800,
+                                         "height":  2200,
+                                         "depth":  560,
+                                         "doors":  2,
+                                         "divider":  true,
+                                         "shelves":  6,
+                                         "back":  true,
+                                         "drawers":  0,
+                                         "thickness":  18,
+                                         "color":  "oak"
+                                     }
+                      }
+                  ]
+}

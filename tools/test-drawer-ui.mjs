@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import { mountDrawerCalculator } from '../drawer-calculator-ui.js';
+const nodes = new Map();
+for(const [key,value] of Object.entries({mode:'external',widthMm:'564',depthMm:'500',heightMm:'200',thicknessMm:'18',facadeThicknessMm:'18'})) nodes.set('#drawer-'+key,{value,setAttribute(k,v){this[k]=v;}});
+for(const key of ['widthMm','depthMm','heightMm','thicknessMm','facadeThicknessMm']) nodes.set('#drawer-error-'+key,{textContent:''});
+nodes.set('#drawer-result',{innerHTML:'',textContent:''});nodes.set('#drawer-facade-field',{hidden:true});
+const listeners={};const host={innerHTML:'',querySelector:s=>nodes.get(s),addEventListener:(event,fn)=>listeners[event]=fn};
+mountDrawerCalculator(host); assert.match(nodes.get('#drawer-result').innerHTML,/104563/);
+nodes.get('#drawer-mode').value='internal';nodes.get('#drawer-widthMm').value='800';nodes.get('#drawer-depthMm').value='504';nodes.get('#drawer-heightMm').value='455';nodes.get('#drawer-thicknessMm').value='16';nodes.get('#drawer-facadeThicknessMm').value='16';listeners.change();
+assert.equal(nodes.get('#drawer-facade-field').hidden,false);assert.match(nodes.get('#drawer-result').innerHTML,/104892/);assert.match(nodes.get('#drawer-result').innerHTML,/480/);
+nodes.get('#drawer-widthMm').value='';listeners.input();assert.equal(nodes.get('#drawer-widthMm')['aria-invalid'],'true');assert.match(nodes.get('#drawer-error-widthMm').textContent,/число/);
+nodes.get('#drawer-widthMm').value='564,5';nodes.get('#drawer-mode').value='external';nodes.get('#drawer-facadeThicknessMm').value='bad';listeners.change();assert.equal(nodes.get('#drawer-facade-field').hidden,true);assert.equal(nodes.get('#drawer-widthMm')['aria-invalid'],'false');assert.match(nodes.get('#drawer-result').innerHTML,/522.5/);
+console.log('Drawer UI checks passed: 9');

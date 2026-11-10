@@ -1,3 +1,4 @@
+import { mountDrawerCalculator } from './drawer-calculator-ui.js';
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import {
@@ -798,7 +799,15 @@ appTabs.id = "app-tabs";
 appTabs.setAttribute("role", "tablist");
 appTabs.setAttribute("aria-label", "Разделы FURNIX");
 appTabs.innerHTML = '<button type="button" role="tab" id="tab-design" aria-selected="true" aria-controls="design-panel" tabindex="0">Проектирование</button><button type="button" role="tab" id="tab-lifts" aria-selected="false" aria-controls="lift-page" tabindex="-1">Подъёмники</button>';
+appTabs.insertAdjacentHTML('beforeend', '<button type="button" role="tab" id="tab-drawers" aria-selected="false" aria-controls="drawer-page" tabindex="-1">Ящики</button>');
 toolbar.insertAdjacentElement("afterend", appTabs);
+const drawerPage = document.createElement('section');
+drawerPage.id = 'drawer-page';
+drawerPage.setAttribute('role','tabpanel');
+drawerPage.setAttribute('aria-labelledby','tab-drawers');
+drawerPage.hidden = true;
+document.body.append(drawerPage);
+mountDrawerCalculator(drawerPage);
 const liftPage = document.createElement("section");
 liftPage.id = "lift-page";
 liftPage.setAttribute("role", "tabpanel");
@@ -818,22 +827,25 @@ const liftControls = mountLiftCalculator(liftPage, {
   removeSpecificationItem: removeLiftSpecificationItem,
 });
 const setAppTab = (name) => {
-  const isLifts = name === "lifts";
-  byId("tab-design").setAttribute("aria-selected", String(!isLifts));
-  byId("tab-lifts").setAttribute("aria-selected", String(isLifts));
-  byId("tab-design").tabIndex = isLifts ? -1 : 0;
-  byId("tab-lifts").tabIndex = isLifts ? 0 : -1;
-  document.body.classList.toggle("lift-active", isLifts);
+  for (const key of ['design','lifts','drawers']) {
+    byId('tab-'+key).setAttribute('aria-selected',String(name === key));
+    byId('tab-'+key).tabIndex = name === key ? 0 : -1;
+  }
+  document.body.classList.toggle('lift-active',name === 'lifts');
+  document.body.classList.toggle('drawer-active',name === 'drawers');
+  liftPage.hidden = name !== 'lifts';
+  drawerPage.hidden = name !== 'drawers';
 };
-byId("tab-design").addEventListener("click", () => setAppTab("design"));
-byId("tab-lifts").addEventListener("click", () => setAppTab("lifts"));
-appTabs.addEventListener("keydown", (event) => {
-  if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
-  event.preventDefault();
-  const next = event.target.id === "tab-design" ? byId("tab-lifts") : byId("tab-design");
-  next.focus();
-  next.click();
+for (const key of ['design','lifts','drawers']) byId('tab-'+key).addEventListener('click',()=>setAppTab(key));
+appTabs.addEventListener('keydown',event=>{
+ const tabs = [...appTabs.querySelectorAll('[role="tab"]')];
+ if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+ event.preventDefault();
+ const i=tabs.indexOf(event.target);
+ const next=tabs[event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length-1 : (i+(event.key === 'ArrowRight' ? 1 : -1)+tabs.length)%tabs.length];
+ next.focus(); next.click();
 });
+setAppTab('design');
 
 const parameterDock = document.createElement("section");
 parameterDock.id = "parameter-dock";
